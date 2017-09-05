@@ -37,7 +37,7 @@ public class NmacUsrPrflRestController {
 	 */
 
 	@RequestMapping(value="", method=RequestMethod.GET,
-			produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+			produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public ResponseMessage getAll() {
 
