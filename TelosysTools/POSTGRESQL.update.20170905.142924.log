@@ -1,0 +1,310 @@
+Update date : Tue Sep 05 14:29:25 EST 2017
+ 
+ Table 'nmac_pymnt_acnts' found in repository
+ . Column 'pymnt_acnt_ky' : Comment changed to null
+ . Column 'pymnt_acnt_ky' updated
+ . Column 'objct_nm' : Comment changed to null
+ . Column 'objct_nm' updated
+ . Column 'usr_id' : Comment changed to null
+ . Column 'usr_id' updated
+ . Column 'pymnt_typ_nm' : Comment changed to null
+ . Column 'pymnt_typ_nm' updated
+ . Column 'acnt_hldr_nm' : Comment changed to null
+ . Column 'acnt_hldr_nm' updated
+ . Column 'acnt_id' : Comment changed to null
+ . Column 'acnt_id' updated
+ . Column 'acnt_typ_nm' : Comment changed to null
+ . Column 'acnt_typ_nm' updated
+ . Column 'acnt_usg_tx' : Comment changed to null
+ . Column 'acnt_usg_tx' updated
+ . Column 'acnt_sts_tx' : Comment changed to null
+ . Column 'acnt_sts_tx' updated
+ . Column 'rtng_trnst_id' : Comment changed to null
+ . Column 'rtng_trnst_id' updated
+ . Column 'ntfy_src_cd' : Comment changed to null
+ . Column 'ntfy_src_cd' updated
+ . Column 'ntfy_sts_cd' : Comment changed to null
+ . Column 'ntfy_sts_cd' updated
+ . Column 'trnscn_msg_tx' : Comment changed to null
+ . Column 'trnscn_msg_tx' updated
+ . Column 'trnscn_ts' : Comment changed to null
+ . Column 'trnscn_ts' updated
+ . Column 'flex_clmn1_tx' : Comment changed to null
+ . Column 'flex_clmn1_tx' updated
+ . Column 'flex_clmn2_tx' : Comment changed to null
+ . Column 'flex_clmn2_tx' updated
+ . Column 'ntfy_exprtn_sts_cd' : Comment changed to null
+ . Column 'ntfy_exprtn_sts_cd' updated
+ . Column 'crte_ts' : Comment changed to null
+ . Column 'crte_ts' updated
+ . Column 'crte_usr_id' : Comment changed to null
+ . Column 'crte_usr_id' updated
+ . Column 'updt_ts' : Comment changed to null
+ . Column 'updt_ts' updated
+ . Column 'updt_usr_id' : Comment changed to null
+ . Column 'updt_usr_id' updated
+ . Column 'id' : Comment changed to null
+ . Column 'id' updated
+ (*) table 'nmac_pymnt_acnts' updated : 22 change(s)
+ 
+ Table 'nmac_pymnt_acnts_hs' found in repository
+ . Column 'pymnt_acnt_hs_ky' : Comment changed to null
+ . Column 'pymnt_acnt_hs_ky' updated
+ . Column 'pymnt_acnt_ky' : Comment changed to null
+ . Column 'pymnt_acnt_ky' updated
+ . Column 'objct_nm' : Comment changed to null
+ . Column 'objct_nm' updated
+ . Column 'usr_id' : Comment changed to null
+ . Column 'usr_id' updated
+ . Column 'pymnt_typ_nm' : Comment changed to null
+ . Column 'pymnt_typ_nm' updated
+ . Column 'acnt_hldr_nm' : Comment changed to null
+ . Column 'acnt_hldr_nm' updated
+ . Column 'acnt_id' : Comment changed to null
+ . Column 'acnt_id' updated
+ . Column 'acnt_typ_nm' : Comment changed to null
+ . Column 'acnt_typ_nm' updated
+ . Column 'acnt_usg_tx' : Comment changed to null
+ . Column 'acnt_usg_tx' updated
+ . Column 'acnt_sts_tx' : Comment changed to null
+ . Column 'acnt_sts_tx' updated
+ . Column 'rtng_trnst_id' : Comment changed to null
+ . Column 'rtng_trnst_id' updated
+ . Column 'ntfy_src_cd' : Comment changed to null
+ . Column 'ntfy_src_cd' updated
+ . Column 'ntfy_sts_cd' : Comment changed to null
+ . Column 'ntfy_sts_cd' updated
+ . Column 'trnscn_msg_tx' : Comment changed to null
+ . Column 'trnscn_msg_tx' updated
+ . Column 'trnscn_ts' : Comment changed to null
+ . Column 'trnscn_ts' updated
+ . Column 'flex_clmn1_tx' : Comment changed to null
+ . Column 'flex_clmn1_tx' updated
+ . Column 'flex_clmn2_tx' : Comment changed to null
+ . Column 'flex_clmn2_tx' updated
+ . Column 'ntfy_exprtn_sts_cd' : Comment changed to null
+ . Column 'ntfy_exprtn_sts_cd' updated
+ . Column 'adt_oprtn_cd' : Comment changed to null
+ . Column 'adt_oprtn_cd' updated
+ . Column 'adt_sts_cd' : Comment changed to null
+ . Column 'adt_sts_cd' updated
+ . Column 'adt_rsn_tx' : Comment changed to null
+ . Column 'adt_rsn_tx' updated
+ . Column 'job_ky' : Comment changed to null
+ . Column 'job_ky' updated
+ . Column 'job_nm' : Comment changed to null
+ . Column 'job_nm' updated
+ . Column 'adt_ts' : Comment changed to null
+ . Column 'adt_ts' updated
+ . Column 'crte_ts' : Comment changed to null
+ . Column 'crte_ts' updated
+ . Column 'crte_usr_id' : Comment changed to null
+ . Column 'crte_usr_id' updated
+ . Column 'updt_ts' : Comment changed to null
+ . Column 'updt_ts' updated
+ . Column 'updt_usr_id' : Comment changed to null
+ . Column 'updt_usr_id' updated
+ . Column 'id' added
+ (*) table 'nmac_pymnt_acnts_hs' updated : 29 change(s)
+ 
+ Table 'nmac_pymnts' found in repository
+ . Column 'usr_id' : Comment changed to null
+ . Column 'usr_id' updated
+ . Column 'fncl_acnt_id' : Comment changed to null
+ . Column 'fncl_acnt_id' updated
+ . Column 'paye_ky' : Comment changed to null
+ . Column 'paye_ky' updated
+ . Column 'pymnt_acnt_id' : Comment changed to null
+ . Column 'pymnt_acnt_id' updated
+ . Column 'pymnt_typ_nm' : Comment changed to null
+ . Column 'pymnt_typ_nm' updated
+ . Column 'pymnt_am' : Comment changed to null
+ . Column 'pymnt_am' updated
+ . Column 'am_typ_nm' : Comment changed to null
+ . Column 'am_typ_nm' updated
+ . Column 'pymnt_intrvl_dy_nb' : Comment changed to null
+ . Column 'pymnt_intrvl_dy_nb' updated
+ . Column 'pymnt_intrvl_mnth_nb' : Comment changed to null
+ . Column 'pymnt_intrvl_mnth_nb' updated
+ . Column 'pymnt_intrvl_tx' : Comment changed to null
+ . Column 'pymnt_intrvl_tx' updated
+ . Column 'strt_ts' : Comment changed to null
+ . Column 'strt_ts' updated
+ . Column 'end_ts' : Comment changed to null
+ . Column 'end_ts' updated
+ . Column 'max_pymnt_nb' : Comment changed to null
+ . Column 'max_pymnt_nb' updated
+ . Column 'crnt_pymnt_nb' : Comment changed to null
+ . Column 'crnt_pymnt_nb' updated
+ . Column 'pymnt_sts_tx' : Comment changed to null
+ . Column 'pymnt_sts_tx' updated
+ . Column 'eml_in' : Comment changed to null
+ . Column 'eml_in' updated
+ . Column 'bl_schdld_in' : Comment changed to null
+ . Column 'bl_schdld_in' updated
+ . Column 'lst_prcs_ts' : Comment changed to null
+ . Column 'lst_prcs_ts' updated
+ . Column 'nxt_pymnt_ts' : Comment changed to null
+ . Column 'nxt_pymnt_ts' updated
+ . Column 'lst_pymnt_ts' : Comment changed to null
+ . Column 'lst_pymnt_ts' updated
+ . Column 'flex_clmn1_tx' : Comment changed to null
+ . Column 'flex_clmn1_tx' updated
+ . Column 'flex_clmn2_tx' : Comment changed to null
+ . Column 'flex_clmn2_tx' updated
+ . Column 'pymnt_acnt_ky' : Comment changed to null
+ . Column 'pymnt_acnt_ky' updated
+ . Column 'nxt_due_am' : Comment changed to null
+ . Column 'nxt_due_am' updated
+ . Column 'late_chrg_am' : Comment changed to null
+ . Column 'late_chrg_am' updated
+ . Column 'msclns_am' : Comment changed to null
+ . Column 'msclns_am' updated
+ . Column 'adtnl_am' : Comment changed to null
+ . Column 'adtnl_am' updated
+ . Column 'prcpal_am' : Comment changed to null
+ . Column 'prcpal_am' updated
+ . Column 'prprty_tax_am' : Comment changed to null
+ . Column 'prprty_tax_am' updated
+ . Column 'othr_am' : Comment changed to null
+ . Column 'othr_am' updated
+ . Column 'mturty_ts' : Comment changed to null
+ . Column 'mturty_ts' updated
+ . Column 'to_pd_am' : Comment changed to null
+ . Column 'to_pd_am' updated
+ . Column 'dlt_pymnt_for_tx' : Comment changed to null
+ . Column 'dlt_pymnt_for_tx' updated
+ . Column 'pymnt_src_cd' : Comment changed to null
+ . Column 'pymnt_src_cd' updated
+ . Column 'crte_ts' : Comment changed to null
+ . Column 'crte_ts' updated
+ . Column 'crte_usr_id' : Comment changed to null
+ . Column 'crte_usr_id' updated
+ . Column 'updt_ts' : Comment changed to null
+ . Column 'updt_ts' updated
+ . Column 'updt_usr_id' : Comment changed to null
+ . Column 'updt_usr_id' updated
+ . Column 'id' added
+ (*) table 'nmac_pymnts' updated : 39 change(s)
+ 
+ Table 'nmac_pymnts_hs' found in repository
+ . Column 'pymnt_hs_ky' : Comment changed to null
+ . Column 'pymnt_hs_ky' updated
+ . Column 'usr_id' : Comment changed to null
+ . Column 'usr_id' updated
+ . Column 'fncl_acnt_id' : Comment changed to null
+ . Column 'fncl_acnt_id' updated
+ . Column 'paye_ky' : Comment changed to null
+ . Column 'paye_ky' updated
+ . Column 'pymnt_acnt_id' : Comment changed to null
+ . Column 'pymnt_acnt_id' updated
+ . Column 'pymnt_typ_nm' : Comment changed to null
+ . Column 'pymnt_typ_nm' updated
+ . Column 'pymnt_am' : Comment changed to null
+ . Column 'pymnt_am' updated
+ . Column 'am_typ_nm' : Comment changed to null
+ . Column 'am_typ_nm' updated
+ . Column 'pymnt_intrvl_dy_nb' : Comment changed to null
+ . Column 'pymnt_intrvl_dy_nb' updated
+ . Column 'pymnt_intrvl_mnth_nb' : Comment changed to null
+ . Column 'pymnt_intrvl_mnth_nb' updated
+ . Column 'pymnt_intrvl_tx' : Comment changed to null
+ . Column 'pymnt_intrvl_tx' updated
+ . Column 'strt_ts' : Comment changed to null
+ . Column 'strt_ts' updated
+ . Column 'end_ts' : Comment changed to null
+ . Column 'end_ts' updated
+ . Column 'max_pymnt_nb' : Comment changed to null
+ . Column 'max_pymnt_nb' updated
+ . Column 'crnt_pymnt_nb' : Comment changed to null
+ . Column 'crnt_pymnt_nb' updated
+ . Column 'pymnt_sts_tx' : Comment changed to null
+ . Column 'pymnt_sts_tx' updated
+ . Column 'eml_in' : Comment changed to null
+ . Column 'eml_in' updated
+ . Column 'bl_schdld_in' : Comment changed to null
+ . Column 'bl_schdld_in' updated
+ . Column 'lst_prcs_ts' : Comment changed to null
+ . Column 'lst_prcs_ts' updated
+ . Column 'nxt_pymnt_ts' : Comment changed to null
+ . Column 'nxt_pymnt_ts' updated
+ . Column 'lst_pymnt_ts' : Comment changed to null
+ . Column 'lst_pymnt_ts' updated
+ . Column 'flex_clmn1_tx' : Comment changed to null
+ . Column 'flex_clmn1_tx' updated
+ . Column 'flex_clmn2_tx' : Comment changed to null
+ . Column 'flex_clmn2_tx' updated
+ . Column 'pymnt_acnt_ky' : Comment changed to null
+ . Column 'pymnt_acnt_ky' updated
+ . Column 'nxt_due_am' : Comment changed to null
+ . Column 'nxt_due_am' updated
+ . Column 'late_chrg_am' : Comment changed to null
+ . Column 'late_chrg_am' updated
+ . Column 'msclns_am' : Comment changed to null
+ . Column 'msclns_am' updated
+ . Column 'adtnl_am' : Comment changed to null
+ . Column 'adtnl_am' updated
+ . Column 'prcpal_am' : Comment changed to null
+ . Column 'prcpal_am' updated
+ . Column 'prprty_tax_am' : Comment changed to null
+ . Column 'prprty_tax_am' updated
+ . Column 'othr_am' : Comment changed to null
+ . Column 'othr_am' updated
+ . Column 'mturty_ts' : Comment changed to null
+ . Column 'mturty_ts' updated
+ . Column 'to_pd_am' : Comment changed to null
+ . Column 'to_pd_am' updated
+ . Column 'dlt_pymnt_for_tx' : Comment changed to null
+ . Column 'dlt_pymnt_for_tx' updated
+ . Column 'pymnt_src_cd' : Comment changed to null
+ . Column 'pymnt_src_cd' updated
+ . Column 'adt_oprtn_cd' : Comment changed to null
+ . Column 'adt_oprtn_cd' updated
+ . Column 'adt_sts_cd' : Comment changed to null
+ . Column 'adt_sts_cd' updated
+ . Column 'adt_rsn_tx' : Comment changed to null
+ . Column 'adt_rsn_tx' updated
+ . Column 'job_ky' : Comment changed to null
+ . Column 'job_ky' updated
+ . Column 'job_nm' : Comment changed to null
+ . Column 'job_nm' updated
+ . Column 'adt_ts' : Comment changed to null
+ . Column 'adt_ts' updated
+ . Column 'crte_ts' : Comment changed to null
+ . Column 'crte_ts' updated
+ . Column 'crte_usr_id' : Comment changed to null
+ . Column 'crte_usr_id' updated
+ . Column 'updt_ts' : Comment changed to null
+ . Column 'updt_ts' updated
+ . Column 'updt_usr_id' : Comment changed to null
+ . Column 'updt_usr_id' updated
+ . Column 'id' added
+ (*) table 'nmac_pymnts_hs' updated : 46 change(s)
+ 
+ Table 'nmac_usr_prfl' found in repository
+ . Column 'usr_ky' : Comment changed to null
+ . Column 'usr_ky' updated
+ . Column 'usr_id' : Comment changed to null
+ . Column 'usr_id' updated
+ . Column 'usr_frst_nm' : Comment changed to null
+ . Column 'usr_frst_nm' updated
+ . Column 'usr_lst_nm' : Comment changed to null
+ . Column 'usr_lst_nm' updated
+ . Column 'flex_clmn1_tx' : Comment changed to null
+ . Column 'flex_clmn1_tx' updated
+ . Column 'flex_clmn2_tx' : Comment changed to null
+ . Column 'flex_clmn2_tx' updated
+ . Column 'flex_clmn3_tx' : Comment changed to null
+ . Column 'flex_clmn3_tx' updated
+ . Column 'flex_clmn4_tx' : Comment changed to null
+ . Column 'flex_clmn4_tx' updated
+ . Column 'crte_ts' : Comment changed to null
+ . Column 'crte_ts' updated
+ . Column 'crte_usr_id' : Comment changed to null
+ . Column 'crte_usr_id' updated
+ . Column 'updt_ts' : Comment changed to null
+ . Column 'updt_ts' updated
+ . Column 'updt_usr_id' : Comment changed to null
+ . Column 'updt_usr_id' updated
+ . Column 'id' added
+ (*) table 'nmac_usr_prfl' updated : 13 change(s)
