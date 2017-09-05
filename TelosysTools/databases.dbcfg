@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databases defaultId="0" maxId="0">
+<db dialect="" driver="org.postgresql.Driver" id="0" isolationLevel="" name="POSTGRESQL" poolSize="1" typeName="" url="jdbc:postgresql://ec2-52-203-179-186.compute-1.amazonaws.com:5432/d5b07er98kf2rh?sslmode=require">
+<property name="user" value="u21lpm2c759o0j"/>
+<property name="password" value="p4f193096ab61a0ff2324b5d52026521a1967f840c609d9908d41c69ff0fdadfd"/>
+<metadata catalog="" schema="public" table-name-exclude="^[_]\w*" table-name-include="" table-name-pattern="%" table-types="TABLE"/>
+</db>
+</databases>
