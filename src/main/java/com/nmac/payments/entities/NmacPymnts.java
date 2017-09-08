@@ -39,8 +39,9 @@ public class NmacPymnts implements Serializable
     // ENTITY PRIMARY KEY ( BASED ON A SINGLE FIELD )
     //----------------------------------------------------------------------
     @Id
-    @Column(name="id", nullable=false)
-    private Integer    id           ;
+    @SequenceGenerator(name="PYMNT_SEQ_GEN", sequenceName="NMAC_PYMNTS_SEQ", allocationSize=1)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="PYMNT_SEQ_GEN")
+    private Integer id;
 
 
     //----------------------------------------------------------------------
