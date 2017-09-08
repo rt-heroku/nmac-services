@@ -24,7 +24,7 @@ import com.nmac.payments.entities.NmacUser;
 import com.nmac.payments.services.NmacUserService;
 
 @Controller
-@RequestMapping(value="/api/v1/user")
+@RequestMapping(value="/api/v1/nmacuser")
 public class NmacUserRestController {
 	
 	private static Logger logger = LoggerFactory.getLogger(NmacUserRestController.class);
