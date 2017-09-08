@@ -20,17 +20,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.nmac.payments.model.ResponseMessage;
-import com.nmac.payments.entities.User;
-import com.nmac.payments.services.UserService;
+import com.nmac.payments.entities.NmacUser;
+import com.nmac.payments.services.NmacUserService;
 
 @Controller
 @RequestMapping(value="/api/v1/user")
-public class UserRestController {
+public class NmacUserRestController {
 	
-	private static Logger logger = LoggerFactory.getLogger(UserRestController.class);
+	private static Logger logger = LoggerFactory.getLogger(NmacUserRestController.class);
 	
 	@Autowired
-	private UserService userService;
+	private NmacUserService nmacUserService;
 		
 	/*
 	 * READ METHODS
@@ -46,7 +46,7 @@ public class UserRestController {
 		
 		ResponseMessage responseMessage = new ResponseMessage();
 		try {
-			responseMessage.setData(userService.findAll());
+			responseMessage.setData(nmacUserService.findAll());
 		} catch (Exception e) {
 			logger.error("UserController -> getAll", e);
 			responseMessage.setError(-1, "Unable to get page for User: " + e.getMessage());
@@ -64,7 +64,7 @@ public class UserRestController {
 		
 		ResponseMessage responseMessage = new ResponseMessage();
 		try {
-			responseMessage.setData(userService.findAll(page, records));
+			responseMessage.setData(nmacUserService.findAll(page, records));
 		} catch (Exception e) {
 			logger.error("UserController -> getPage", e);
 			responseMessage.setError(-1, "Unable to get page for User: " + e.getMessage());
@@ -140,7 +140,7 @@ public class UserRestController {
 		ResponseMessage responseMessage = new ResponseMessage();
 		
 		try {
-			responseMessage.setData(userService.get(id));
+			responseMessage.setData(nmacUserService.get(id));
 		} catch (Exception e) {
 			logger.error("UserController -> create", e);
 			responseMessage.setError(-1,
@@ -156,7 +156,7 @@ public class UserRestController {
 	 */
 	@RequestMapping(value = "/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
-	public ResponseMessage create(@RequestBody User element) {
+	public ResponseMessage create(@RequestBody NmacUser element) {
 
 		if (logger.isDebugEnabled())
 			logger.debug("UserService -> create:" + element);
@@ -164,7 +164,7 @@ public class UserRestController {
 		ResponseMessage responseMessage = new ResponseMessage();
 		
 		try {
-			responseMessage.setData(userService.create(element));
+			responseMessage.setData(nmacUserService.create(element));
 		} catch (Exception e) {
 			logger.error("UserController -> create", e);
 			responseMessage.setError(-1,
@@ -176,7 +176,7 @@ public class UserRestController {
 
 	@RequestMapping(value = "/edit/{id}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
-	public ResponseMessage edit(@PathVariable Integer id, @RequestBody User element) {
+	public ResponseMessage edit(@PathVariable Integer id, @RequestBody NmacUser element) {
 		if (logger.isDebugEnabled())
 			logger.debug("UserService -> edit(" + id + "):" + element);
 
@@ -184,7 +184,7 @@ public class UserRestController {
 		
 		try {
 			element.setId(id);
-			responseMessage.setData(userService.create(element));
+			responseMessage.setData(nmacUserService.create(element));
 		} catch (Exception e) {
 			logger.error("UserController -> edit", e);
 			responseMessage.setError(-1,
@@ -204,7 +204,7 @@ public class UserRestController {
 
 		ResponseMessage responseMessage = new ResponseMessage();
 		try {
-			userService.delete(id);
+			nmacUserService.delete(id);
 		} catch (Exception e) {
 			logger.error("UserController -> delete", e);
 			responseMessage.setError(-1, "Unable to delete User: " + id + ",Error:"  + e.getMessage());

@@ -5,7 +5,7 @@
 
 package com.nmac.payments.repository;
 
-import com.nmac.payments.entities.User ;
+import com.nmac.payments.entities.NmacUser ;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 
@@ -17,6 +17,6 @@ import org.springframework.data.repository.PagingAndSortingRepository;
  * @author Rodrigo Torres (Heroku)
  *
  */
-public interface UserRepository extends PagingAndSortingRepository<User, Integer> {
+public interface NmacUserRepository extends PagingAndSortingRepository<NmacUser, Integer> {
 
 }

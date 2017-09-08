@@ -28,9 +28,9 @@ import javax.persistence.*;
 @Table(name="user", schema="salesforce" )
 // Define named queries here
 @NamedQueries ( {
-  @NamedQuery ( name="User.countAll", query="SELECT COUNT(x) FROM User x" )
+  @NamedQuery ( name="NmacUser.countAll", query="SELECT COUNT(x) FROM NmacUser x" )
 } )
-public class User implements Serializable
+public class NmacUser implements Serializable
 {
     private static final long serialVersionUID = 1L;
 
@@ -120,12 +120,12 @@ public class User implements Serializable
     //----------------------------------------------------------------------
     // CONSTRUCTOR(S)
     //----------------------------------------------------------------------
-    public User()
+    public NmacUser()
     {
 		super();
     }
 
-    public User update(User a) {
+    public NmacUser update(NmacUser a) {
 		this.id = a.id;
         this.sfid = a.sfid;
         this.firstname = a.firstname;

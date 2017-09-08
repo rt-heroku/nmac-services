@@ -1,5 +1,7 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
+### Heroku environment ####
+.env
 
 ### STS ###
 .apt_generated

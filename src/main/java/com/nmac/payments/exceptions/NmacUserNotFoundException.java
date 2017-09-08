@@ -5,15 +5,15 @@
 
 package com.nmac.payments.exceptions;
 
-public class UserNotFoundException extends RuntimeException {
+public class NmacUserNotFoundException extends RuntimeException {
 
 	private static final long serialVersionUID = -1L;
 
-	public UserNotFoundException(Integer id) {
+	public NmacUserNotFoundException(Integer id) {
 		super("User not found with id: " + id.toString());
 	}
 
-	public UserNotFoundException(String user) {
+	public NmacUserNotFoundException(String user) {
 		super("User " + user + " not found!");
 	}
 }
