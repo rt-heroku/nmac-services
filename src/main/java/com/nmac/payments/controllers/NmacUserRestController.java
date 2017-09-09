@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.nmac.payments.model.ResponseMessage;
@@ -25,6 +26,7 @@ import com.nmac.payments.services.NmacUserService;
 
 @Controller
 @RequestMapping(value="/api/v1/nmacuser")
+@CrossOrigin(origins = "*",methods = {RequestMethod.OPTIONS,RequestMethod.GET, RequestMethod.POST}, maxAge = 3600)
 public class NmacUserRestController {
 	
 	private static Logger logger = LoggerFactory.getLogger(NmacUserRestController.class);
