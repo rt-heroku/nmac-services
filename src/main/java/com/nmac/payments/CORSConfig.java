@@ -16,8 +16,9 @@ public class CORSConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                 .allowedOrigins("*")
-                .allowedMethods("OPTIONS","GET","POST","PUT","DELETE");
-                
+                .allowedMethods("OPTIONS","GET","POST","PUT","DELETE")
+                .allowCredentials(true)
+                .allowedHeaders("origin", "content-type", "accept");
             }
         };
     }
