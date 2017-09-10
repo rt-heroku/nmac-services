@@ -39,6 +39,7 @@ public class ServiceSecurityConfig extends WebSecurityConfigurerAdapter {
 		.cors().and()
 		.httpBasic().and().authorizeRequests()
 			.antMatchers("/user/**").hasAuthority("ROLE_ADMIN")
+			.antMatchers(HttpMethod.OPTIONS,"/**").permitAll()
 			.antMatchers(HttpMethod.POST,"/user/add").hasAnyAuthority("ROLE_ADMIN")
 			.antMatchers(HttpMethod.DELETE,"/user/**").hasAnyAuthority("ROLE_ADMIN")
 			.antMatchers("/**").hasAnyAuthority("ROLE_USER","ROLE_ADMIN")
@@ -107,6 +108,8 @@ public class ServiceSecurityConfig extends WebSecurityConfigurerAdapter {
 			.anyRequest()
 			.authenticated().and().csrf().disable();
 	}
+	
+	
 	
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
