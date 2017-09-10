@@ -5,6 +5,8 @@
 
 package com.nmac.payments.security;
 
+import java.util.Arrays;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -18,6 +20,9 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
@@ -39,7 +44,7 @@ public class ServiceSecurityConfig extends WebSecurityConfigurerAdapter {
 		.cors().and()
 		.httpBasic().and().authorizeRequests()
 			.antMatchers("/user/**").hasAuthority("ROLE_ADMIN")
-			.antMatchers(HttpMethod.OPTIONS,"/**").permitAll()
+			//.antMatchers(HttpMethod.OPTIONS,"/").permitAll()
 			.antMatchers(HttpMethod.POST,"/user/add").hasAnyAuthority("ROLE_ADMIN")
 			.antMatchers(HttpMethod.DELETE,"/user/**").hasAnyAuthority("ROLE_ADMIN")
 			.antMatchers("/**").hasAnyAuthority("ROLE_USER","ROLE_ADMIN")
@@ -109,7 +114,16 @@ public class ServiceSecurityConfig extends WebSecurityConfigurerAdapter {
 			.authenticated().and().csrf().disable();
 	}
 	
-	
+	@Bean
+	CorsConfigurationSource corsConfigurationSource() {
+		CorsConfiguration configuration = new CorsConfiguration();
+		configuration.setAllowedOrigins(Arrays.asList("*"));
+		configuration.setAllowedMethods(Arrays.asList("GET","POST","PUT","DELETE"));
+		configuration.setAllowCredentials(true);
+		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+		source.registerCorsConfiguration("/**", configuration);
+		return source;
+	}
 	
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
