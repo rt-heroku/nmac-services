@@ -43,6 +43,7 @@ public class ServiceSecurityConfig extends WebSecurityConfigurerAdapter {
 		http
 		.cors().and()
 		.httpBasic().and().authorizeRequests()
+			.antMatchers(HttpMethod.OPTIONS,"/").permitAll()
 			.antMatchers("/user/**").hasAuthority("ROLE_ADMIN")
 			//.antMatchers(HttpMethod.OPTIONS,"/").permitAll()
 			.antMatchers(HttpMethod.POST,"/user/add").hasAnyAuthority("ROLE_ADMIN")
@@ -118,7 +119,7 @@ public class ServiceSecurityConfig extends WebSecurityConfigurerAdapter {
 	CorsConfigurationSource corsConfigurationSource() {
 		CorsConfiguration configuration = new CorsConfiguration();
 		configuration.setAllowedOrigins(Arrays.asList("*"));
-		configuration.setAllowedMethods(Arrays.asList("GET","POST","PUT","DELETE"));
+		configuration.setAllowedMethods(Arrays.asList("*"));
 		configuration.setAllowCredentials(true);
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		source.registerCorsConfiguration("/**", configuration);
