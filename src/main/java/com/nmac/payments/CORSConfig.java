@@ -17,6 +17,7 @@ public class CORSConfig {
                 registry.addMapping("/**")
                 .allowedOrigins("*")
                 .allowedMethods("GET","POST","PUT","DELETE")
+                .allowCredentials(true)
                 .allowedHeaders("*");
             }
         };
