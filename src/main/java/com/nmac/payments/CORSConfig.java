@@ -1,5 +1,7 @@
 package com.nmac.payments;
 
+import java.util.Arrays;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -18,7 +20,9 @@ public class CORSConfig {
                 .allowedOrigins("*")
                 .allowedMethods("*")
                 .allowCredentials(true)
-                .allowedHeaders("*");
+                .allowedHeaders("*")
+                .exposedHeaders("Access-Control-Allow-Headers", "Authorization", "x-xsrf-token", "Access-Control-Allow-Headers", "Origin", "Accept", "X-Requested-With"
+                		,"Content-Type", "Access-Control-Request-Method", "Access-Control-Request-Headers");
             }
         };
     }

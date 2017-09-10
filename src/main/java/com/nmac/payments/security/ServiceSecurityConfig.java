@@ -7,7 +7,6 @@ package com.nmac.payments.security;
 
 import java.util.Arrays;
 
-import org.aspectj.weaver.ast.And;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -44,14 +43,11 @@ public class ServiceSecurityConfig extends WebSecurityConfigurerAdapter {
 		http
 		.cors().and()
 		.httpBasic().and().authorizeRequests()
-			.antMatchers(HttpMethod.OPTIONS,"/**").permitAll()
+			//.antMatchers(HttpMethod.OPTIONS,"/").permitAll()
 			.antMatchers("/user/**").hasAuthority("ROLE_ADMIN")
 			.antMatchers(HttpMethod.POST,"/user/add").hasAnyAuthority("ROLE_ADMIN")
 			.antMatchers(HttpMethod.DELETE,"/user/**").hasAnyAuthority("ROLE_ADMIN")
-			//.antMatchers("/**").hasAnyAuthority("ROLE_USER","ROLE_ADMIN")
-			//.anyRequest()
-			//.authenticated()
-			.and().csrf().disable();
+			.antMatchers("/**").hasAnyAuthority("ROLE_USER","ROLE_ADMIN")
 /*
 * Generated for each one of the end points
 * Uncomment for more control
@@ -114,7 +110,8 @@ public class ServiceSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.PUT, "/api/v1/nmacusrprfl/**").hasAnyAuthority("ROLE_USER")
                 .antMatchers(HttpMethod.DELETE, "/api/v1/nmacusrprfl/**").hasAnyAuthority("ROLE_USER")
 */
-			
+			.anyRequest()
+			.authenticated().and().csrf().disable();
 	}
 	
 	@Bean
@@ -123,7 +120,8 @@ public class ServiceSecurityConfig extends WebSecurityConfigurerAdapter {
 		configuration.setAllowedOrigins(Arrays.asList("*"));
 		configuration.setAllowedMethods(Arrays.asList("*"));
 		configuration.setAllowCredentials(true);
-		configuration.setAllowedHeaders(Arrays.asList("*"));
+		configuration.setExposedHeaders(Arrays.asList("Access-Control-Allow-Headers", "Authorization", "x-xsrf-token", "Access-Control-Allow-Headers", "Origin", "Accept", "X-Requested-With", 
+	            "Content-Type", "Access-Control-Request-Method", "Access-Control-Request-Headers"));
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		source.registerCorsConfiguration("/**", configuration);
 		return source;
