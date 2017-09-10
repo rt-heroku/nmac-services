@@ -27,7 +27,7 @@ public class CORSConfig {
     }
     */
 	
-	 @Bean
+	/* @Bean
 	    public FilterRegistrationBean corsFilter() {
 	        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 	        CorsConfiguration config = new CorsConfiguration();
@@ -39,4 +39,5 @@ public class CORSConfig {
 	        bean.setOrder(0);
 	        return bean;
 	    }
+	    */
 }

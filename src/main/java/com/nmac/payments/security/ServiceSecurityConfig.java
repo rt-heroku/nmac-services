@@ -43,9 +43,8 @@ public class ServiceSecurityConfig extends WebSecurityConfigurerAdapter {
 		http
 		.cors().and()
 		.httpBasic().and().authorizeRequests()
-			.antMatchers(HttpMethod.OPTIONS,"/").permitAll()
-			.antMatchers("/user/**").hasAuthority("ROLE_ADMIN")
 			//.antMatchers(HttpMethod.OPTIONS,"/").permitAll()
+			.antMatchers("/user/**").hasAuthority("ROLE_ADMIN")
 			.antMatchers(HttpMethod.POST,"/user/add").hasAnyAuthority("ROLE_ADMIN")
 			.antMatchers(HttpMethod.DELETE,"/user/**").hasAnyAuthority("ROLE_ADMIN")
 			.antMatchers("/**").hasAnyAuthority("ROLE_USER","ROLE_ADMIN")
